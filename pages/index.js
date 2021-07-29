@@ -1,7 +1,13 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 export default function Home() {
+    const router = useRouter()
+    const handleClick = () => {
+        console.log('Place your order')
+        router.push('/product')
+    }
     return (
         <div >
             <Head>
@@ -25,6 +31,9 @@ export default function Home() {
                     <Link href="/product" >
                         <a className={styles.aa}>Products</a>
                     </Link>
+
+                    <a onClick={handleClick} style={{ backgroundColor: 'green' }} className={styles.aa}>Place Order</a>
+
                 </div>
             </main>
         </div>
