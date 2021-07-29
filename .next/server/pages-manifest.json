@@ -2,6 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/product/[productId]": "pages/product/[productId].js",
-  "/product/[productId]/review/[reviewId]": "pages/product/[productId]/review/[reviewId].js"
+  "/product": "pages/product.js",
+  "/": "pages/index.js",
+  "/profile": "pages/profile.js",
+  "/blog": "pages/blog.js",
+  "/product/[productId]": "pages/product/[productId].js"
 }

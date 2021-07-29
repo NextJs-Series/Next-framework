@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link';
 import styles from '/styles/Home.module.css'
 
 export default function Blogs() {
@@ -11,6 +12,9 @@ export default function Blogs() {
             </Head>
 
             <main className={styles.main}>
+                <Link href="/">
+                    <a style={{ justifyContent: 'center' }} className={styles.aa} >Home</a>
+                </Link>
                 <h1 className={styles.title}>
                     Welcome to <a href="https://nextjs.org">Blogs Page !</a>
                 </h1>

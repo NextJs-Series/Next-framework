@@ -15,7 +15,7 @@ export default function ProductDetails() {
             <main className={styles.main}>
 
                 <h1 className={styles.title}>
-                    Details about <a href="https://nextjs.org">{productId}</a>
+                    Details about product <a href="https://nextjs.org">{productId}</a>
                 </h1>
             </main>
         </div>

@@ -1,7 +1,8 @@
 import Head from 'next/head'
-import styles from '/styles/Home.module.css'
+import styles from '/styles/Home.module.css';
+import Link from 'next/link';
 
-export default function ProductList() {
+export default function ProductList({ productId = 120 }) {
     return (
         <div className={styles.container}>
             <Head>
@@ -11,15 +12,29 @@ export default function ProductList() {
             </Head>
 
             <main className={styles.main}>
-                <div>
+                <Link href="/">
+                    <a style={{ justifyContent: 'center' }} className={styles.aa} >Home</a>
+                </Link>
+                <div >
                     <p className={styles.title}>
-                        Product <span style={{ color: 'green' }}>one</span>
+                        <Link href="/product/1" >
+                            <a> Product <span style={{ color: 'green' }}>one</span></a>
+                        </Link>
                     </p>
                     <p className={styles.title}>
-                        Product <span style={{ color: 'orange' }}>Two</span>
+                        <Link href="/product/2" >
+                            <a> Product <span style={{ color: 'orange' }}>Two</span></a>
+                        </Link>
                     </p>
                     <p className={styles.title}>
-                        Product <span style={{ color: 'red' }}>Three</span>
+                        <Link href="/product/3" replace >
+                            <a> Product <span style={{ color: 'pink' }}>Three</span></a>
+                        </Link>
+                    </p>
+                    <p className={styles.title}>
+                        <Link href={`/product/${productId}`} >
+                            <a> Product <span style={{ color: 'pink' }}>{productId}</span></a>
+                        </Link>
                     </p>
                 </div>
             </main>
