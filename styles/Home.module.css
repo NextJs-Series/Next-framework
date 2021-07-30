@@ -123,15 +123,18 @@
   /* margin-top:2rem; */
   /* position: absolute; */
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
 
 }
 .aa{
   background-color: red;
   color: white;
   border-radius: 10px;
-  padding: 1em 1.5em;
-  margin:1em 2em;
+  padding: 10px 15px;
+  margin:10px 5px;
   text-decoration: none;
   text-transform: uppercase;
 }
+

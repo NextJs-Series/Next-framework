@@ -34,6 +34,9 @@ export default function Home() {
                     <Link href="/users" >
                         <a className={styles.aa}>Our Users</a>
                     </Link>
+                    <Link href="/posts" >
+                        <a className={styles.aa}>Posts</a>
+                    </Link>
                     <a onClick={handleClick} style={{ backgroundColor: 'green' }} className={styles.aa}>Place Order</a>
 
                 </div>
