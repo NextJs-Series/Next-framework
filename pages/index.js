@@ -6,7 +6,7 @@ export default function Home() {
     const router = useRouter()
     const handleClick = () => {
         console.log('Place your order')
-        router.push('/product')
+        router.push('/products')
     }
     return (
         <div >
@@ -17,9 +17,9 @@ export default function Home() {
             </Head>
             <main className={styles.main}>
                 <div>
-                    <h1 className={styles.title}>
-                        Welcome to <a href="https://nextjs.org">Home Page !</a>
-                    </h1>
+                    <p className={styles.title}>
+                        Welcome<a href="https://nextjs.org"> Home </a>
+                    </p>
                 </div>
                 <div className={styles.homebuttons}>
                     <Link href="/blog" >
@@ -28,7 +28,7 @@ export default function Home() {
                     <Link href="/profile" >
                         <a className={styles.aa}>Profile</a>
                     </Link>
-                    <Link href="/product" >
+                    <Link href="/products" >
                         <a className={styles.aa}>Products</a>
                     </Link>
                     <Link href="/users" >
