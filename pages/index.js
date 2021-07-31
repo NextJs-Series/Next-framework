@@ -25,6 +25,9 @@ export default function Home() {
                     <Link href="/dashboard" >
                         <a className={styles.aa} >Dashboard</a>
                     </Link>
+                    <Link href="/events" >
+                        <a className={styles.aa} >Events</a>
+                    </Link>
                     <Link href="/blog" >
                         <a className={styles.aa} >Blog</a>
                     </Link>
