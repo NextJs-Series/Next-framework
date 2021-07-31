@@ -22,6 +22,9 @@ export default function Home() {
                     </p>
                 </div>
                 <div className={styles.homebuttons}>
+                    <Link href="/dashboard" >
+                        <a className={styles.aa} >Dashboard</a>
+                    </Link>
                     <Link href="/blog" >
                         <a className={styles.aa} >Blog</a>
                     </Link>
@@ -36,6 +39,9 @@ export default function Home() {
                     </Link>
                     <Link href="/posts" >
                         <a className={styles.aa}>Posts</a>
+                    </Link>
+                    <Link href="/news" >
+                        <a className={styles.aa}>News</a>
                     </Link>
                     <a onClick={handleClick} style={{ backgroundColor: 'green' }} className={styles.aa}>Place Order</a>
 

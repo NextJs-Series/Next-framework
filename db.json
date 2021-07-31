@@ -18,5 +18,43 @@
       "price": 300,
       "description": "Colours result from the electromagnetic radiation of a range of wavelengths that are visible to the eye. The three characteristics of hue, saturation, and brightness are commonly used to distinguish one colour from another."
     }
-  ]
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "ARY",
+      "category": "sports",
+      "description": "Elevate your daywear style with our collection of handbags, tote bags and shoulder bag. Cross body bags transition effortlessly from AM to PM. Downsize to a clutch or mini bag for your evening ensemble."
+    },
+    {
+      "id": 2,
+      "title": "BOL",
+      "category": "politics",
+      "description": "Clothing (also known as clothes, apparel, and attire) are items worn on the body. Typically, clothing is made of fabrics or textiles, but over time it has included garments made from animal skin and other thin sheets of materials and natural products found in the environment, put together"
+    },
+    {
+      "id": 3,
+      "title": "Express",
+      "category": "education",
+      "description": "Colours result from the electromagnetic radiation of a range of wavelengths that are visible to the eye. The three characteristics of hue, saturation, and brightness are commonly used to distinguish one colour from another."
+    },
+    {
+      "id": 4,
+      "title": "ARY",
+      "category": "sports",
+      "description": "Elevate your daywear style with our collection of handbags, tote bags and shoulder bag. Cross body bags transition effortlessly from AM to PM. Downsize to a clutch or mini bag for your evening ensemble."
+    },
+    {
+      "id": 5,
+      "title": "express",
+      "category": "education",
+      "description": "Colours result from the electromagnetic radiation of a range of wavelengths that are visible to the eye. The three characteristics of hue, saturation, and brightness are commonly used to distinguish one colour from another."
+    }
+  ],
+  "dashboard": {
+    "posts": 8,
+    "likes": 100,
+    "followers": 20,
+    "following": 40
+  }
 }
