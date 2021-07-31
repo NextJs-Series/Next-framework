@@ -1,8 +1,19 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { useState } from 'react';
 import styles from '/home/nauman/next/Next-framework/styles/Home.module.css'
 
+
+
 export default function ProductList({ products }) {
+    const [comments, setComments] = useState([])
+
+    const fetchComments = async () => {
+        const response = await fetch(`/api/comments`)
+        const data = await response.json()
+        setComments(data)
+    }
+
     return (
         <div>
             <Head>
@@ -24,7 +35,16 @@ export default function ProductList({ products }) {
                         </div>
                     )
                 })}
-
+                <a style={{ justifyContent: 'center' }} className={styles.aa} onClick={fetchComments} >Comments</a>
+                {
+                    comments.map((comment => {
+                        return (
+                            <div key={comment.id}>
+                                {comment.id} {comment.text}
+                            </div>
+                        )
+                    }))
+                }
             </main>
         </div>
     )
