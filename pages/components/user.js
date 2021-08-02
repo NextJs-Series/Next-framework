@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '/home/nauman/next/Next-framework/styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
 export default function User({ user }) {
     return (

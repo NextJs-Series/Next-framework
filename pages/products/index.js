@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { useState } from 'react';
-import styles from '/home/nauman/next/Next-framework/styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
 
 
